@@ -1,0 +1,137 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: #333;
+	background: #DDDDDB url('bg.jpg') fixed no-repeat center right;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    line-height: 1.25;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+	background: #DDDDDB;
+}
+}
+
+h1 {
+	font-size: 3em;
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    margin: 1em 0 0 0;
+}
+
+h2 {
+	font-size: 2em;
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin-top: 1em;
+}
+
+h3 {
+	font-size: 1.5em;
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-top: 0.2em;
+}
+
+p {
+	margin-bottom: 0.6em;
+}
+
+.container {
+	margin: 0 2em;
+	max-width: 1096px;
+	width: 50%;
+}
+
+.topbox p {
+	font-weight: 700;
+	margin: -0.5em 0 0 1.3em;
+}
+
+.contact {
+	padding-bottom: 200px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+	width: 75%;
+}
+}
+
+a {
+    color:#785943;
+    background:#FFF200;
+    text-decoration: none;
+}
+      
+a:hover {
+    text-decoration: none;
+    background: none;
+    color:grey;
+}
