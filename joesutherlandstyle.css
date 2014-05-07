@@ -32,7 +32,6 @@ body {
 	line-height: 1;
 }
 ol, ul {
-	list-style: none;
 }
 blockquote, q {
 	quotes: none;
@@ -69,7 +68,7 @@ body {
 	background: #DDDDDB url('bg.jpg') fixed no-repeat center right;
     font-family: 'Merriweather', serif;
     font-weight: 300;
-    line-height: 1.25;
+    line-height: 1.5;
 }
 
 @media screen and (max-width: 768px) {
@@ -83,6 +82,7 @@ h1 {
 	font-family: 'Open Sans', sans-serif;
     font-weight: 800;
     margin: 1em 0 0 0;
+    letter-spacing: -3px;
 }
 
 h2 {
@@ -147,8 +147,9 @@ p {
 }
 
 a {
-    color:#006;
-    text-decoration: underline;
+    color:#119;
+    font-weight: 400;
+    text-decoration: none;
 }
       
 a:hover {
