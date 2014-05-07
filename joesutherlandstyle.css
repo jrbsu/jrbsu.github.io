@@ -65,7 +65,7 @@ table {
 }
 
 body {
-	color: #333;
+	color: #111;
 	background: #DDDDDB url('bg.jpg') fixed no-repeat center right;
     font-family: 'Merriweather', serif;
     font-weight: 300;
@@ -109,9 +109,23 @@ p {
 	width: 50%;
 }
 
+.topbox {
+	width: 80%;
+	margin: 0;
+	padding: 0 0 0 2em;
+}
+
 .topbox p {
 	font-weight: 700;
 	margin: -0.5em 0 0 1.3em;
+}
+
+.about {
+	margin: 1em 2em;
+}
+
+.pub {
+	margin: 1em 0;
 }
 
 .contact {
@@ -119,9 +133,17 @@ p {
 }
 
 @media screen and (max-width: 768px) {
-    .container {
+
+.container {
 	width: 75%;
 }
+
+.topbox {
+	width: 80%;
+	margin: 0;
+	padding: 0 0 0 2em;
+}
+
 }
 
 a {
