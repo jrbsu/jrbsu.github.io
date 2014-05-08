@@ -69,6 +69,7 @@ body {
     font-family: 'Merriweather', serif;
     font-weight: 300;
     line-height: 1.5;
+    width: 100%;
 }
 
 @media screen and (max-width: 768px) { /* Get rid of the photo for mobile for legibility */
@@ -115,16 +116,18 @@ a:hover, a.hover {
     color: grey;
 }
 
+.page-wrap {
+	margin: 0 3em;
+}
+
 .container {
-	margin: 0 2em;
 	max-width: 1096px;
-	width: 55%;
+	width: 60%;
 }
 
 .topbox {
 	width: 80%;
 	margin: 0;
-	padding: 0 0 0 2em;
 }
 
 .topbox p {
@@ -133,7 +136,7 @@ a:hover, a.hover {
 }
 
 .about {
-	margin: 2em 2em 1em;
+	margin: 2em 0 1em;
 }
 
 .pub {
@@ -142,6 +145,16 @@ a:hover, a.hover {
 
 .pub-first {
 	margin: 0 0 1em 0;
+}
+
+.what {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	background: #fff;
+	width: 40%;
+	margin: 1em;
+	padding: 0.5em;
 }
 
 li {
@@ -153,35 +166,50 @@ li:before {
 }
 
 .contact {
-	padding-bottom: 200px;
+	padding-bottom: 3em;
 }
 
 /* <Styles for mobile> */
 
+@media screen and (max-width: 1000px) {
+
+.container {
+	width: 50%;
+}
+
+}
+
 @media screen and (max-width: 768px) {
 
 .container {
-	width: 75%;
+	width: 100%;
 }
 
-.topbox {
-	width: 80%;
-	margin: 0;
-	padding: 0 0 0 2em;
+.page-wrap {
+	margin: 0 2em;
 }
 
 h1 {
 	font-size: 3em;
 }
 
+.what {
+	position: relative;
+	background: #fff;
+	width: 100%;
+	margin: 1em;
+	padding: 0.5em;
+}
+
 }
 
 /* </Styles for mobile> */
 
+/*
 @media screen and (min-width: 500px) { 
 
 body {
 	padding: 0 0 0 2em;
 }
 
-}
+} */

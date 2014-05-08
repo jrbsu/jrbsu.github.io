@@ -18,7 +18,7 @@ $(document).ready(function randomColour() {
 		$(this).css("color", colour);
 		$(this).css("background", "none");
 	});
-	var within_std_of = 1; /* Code from https://gist.github.com/matthutchinson/1648603 */
+	/* Code from https://gist.github.com/matthutchinson/1648603 */
 	average = function(a) {
 		var r = {mean: 0, variance: 0, deviation: 0}, t = a.length;
 		for(var m, s = 0, l = t; l--; s += a[l]);
@@ -32,3 +32,5 @@ $(document).ready(function randomColour() {
 	}
 	console.log("Mean: "+x.mean+", Dev: "+x.deviation+", Yellowness: "+yellowness);
 });
+$(document).ready(function infoBox() {
+	});
