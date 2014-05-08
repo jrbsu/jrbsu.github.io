@@ -147,6 +147,11 @@ a:hover, a.hover {
 	margin: 0 0 1em 0;
 }
 
+a.question {
+	vertical-align: super;
+	font-size: 80%;
+}
+
 .what {
 	position: fixed;
 	bottom: 0;
@@ -167,6 +172,10 @@ li:before {
 
 .contact {
 	padding-bottom: 3em;
+}
+
+.hidden {
+	display: none;
 }
 
 /* <Styles for mobile> */

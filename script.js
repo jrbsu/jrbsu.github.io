@@ -31,6 +31,12 @@ $(document).ready(function randomColour() {
 		randomColour();
 	}
 	console.log("Mean: "+x.mean+", Dev: "+x.deviation+", Yellowness: "+yellowness);
+	
+/* I'll fix this later maybe 
+	$('a.question').click(function () {
+		var id = $(this).attr('id');
+		if ($('.what').class() = 'hidden') {
+			$('#'+id+'-info').toggleClass('.hidden');
+		}
+	}); */
 });
-$(document).ready(function infoBox() {
-	});
