@@ -153,10 +153,10 @@ a.question {
 }
 
 .ref {
-	font-size: 70%;
+	font-size: 90%;
 	vertical-align: baseline;
 	position: relative;
-	top: -0.4em;
+	top: -0.2em;
 	cursor: pointer;
 }
 
