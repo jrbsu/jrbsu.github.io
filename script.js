@@ -7,7 +7,7 @@ $(document).ready(function randomColour() {
     	colourArray.push(random);
     }
     colour = "rgb("+colourArray[0]+","+colourArray[1]+","+colourArray[2]+")";
-	console.log(colour);
+//	console.log(colour);
 	$('h1').css("color", colour);
 	$('a').css("color", colour);
 	$('a').mouseenter(function() {
@@ -18,6 +18,7 @@ $(document).ready(function randomColour() {
 		$(this).css("color", colour);
 		$(this).css("background", "none");
 	});
+	$('.explanation').css("border", "3px solid "+colour);
 	/* Code from https://gist.github.com/matthutchinson/1648603 */
 	average = function(a) {
 		var r = {mean: 0, variance: 0, deviation: 0}, t = a.length;
@@ -30,13 +31,17 @@ $(document).ready(function randomColour() {
 	if (x.deviation < 15 || 30 > x.mean > 130 || yellowness > 120) { /* If the colours are too grey or too bright (or too yellow...), roll them again */
 		randomColour();
 	}
-	console.log("Mean: "+x.mean+", Dev: "+x.deviation+", Yellowness: "+yellowness);
-	
-/* I'll fix this later maybe 
-	$('a.question').click(function () {
-		var id = $(this).attr('id');
-		if ($('.what').class() = 'hidden') {
-			$('#'+id+'-info').toggleClass('.hidden');
-		}
-	}); */
+//	console.log("Mean: "+x.mean+", Dev: "+x.deviation+", Yellowness: "+yellowness);
+
+});
+
+$(document).ready(function() {
+    $(".explanation").hide();
+    $(".ref").click(function(event) {
+    $(this.nextSibling).toggle();
+		event.stopPropagation();
+    });
+    $("body").click(function(event) {
+        jQuery(".explanation").hide();
+    });
 });

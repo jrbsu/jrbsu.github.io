@@ -152,14 +152,24 @@ a.question {
 	font-size: 80%;
 }
 
-.what {
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	background: #fff;
-	width: 40%;
-	margin: 1em;
-	padding: 0.5em;
+.ref {
+	font-size: 90%;
+	vertical-align: baseline;
+	position: relative;
+	top: -0.4em;
+}
+
+.explanation {
+	font-size: 50%;
+	display: block;
+	max-width: 30em;
+	position: absolute;
+	left: 30em;
+	margin-top: -2.5em;
+	padding: 5px;
+	background-color: #fff;
+	z-index: 9999;
+	overflow: auto;
 }
 
 li {
@@ -200,16 +210,6 @@ li:before {
 
 h1 {
 	font-size: 3em;
-}
-
-.what {
-	position: relative;
-	background: #fff;
-	width: 100%;
-	margin: 1em;
-	padding: 0.5em;
-}
-
 }
 
 @media screen and (max-width: 500px) {
