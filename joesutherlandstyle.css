@@ -162,11 +162,8 @@ a.question {
 
 .explanation {
 	font-size: 50%;
-	display: block;
 	max-width: 30em;
 	position: absolute;
-	left: 30em;
-	margin-top: -2.5em;
 	padding: 5px;
 	background-color: #fff;
 	z-index: 9999;

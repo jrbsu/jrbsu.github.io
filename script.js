@@ -38,10 +38,10 @@ $(document).ready(function randomColour() {
 $(document).ready(function() {
     $(".explanation").hide();
     $(".ref").click(function(event) {
-    $(this.nextSibling).toggle();
+    $(this.nextSibling).css("display", "absolute");
 		event.stopPropagation();
     });
     $("body").click(function(event) {
-        jQuery(".explanation").hide();
+        $(".explanation").hide();
     });
 });
