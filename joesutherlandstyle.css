@@ -108,6 +108,8 @@ p {
 a {
     font-weight: 400;
     text-decoration: none;
+    color: black;
+    padding: 2px 0;
 }
       
 a:hover, a.hover {
