@@ -46,14 +46,14 @@ $(document).ready(function namedColour() {
 	var colourName = nameArray[random];
     
 	$('h1').css("color", colour);
-	$('a').css("background", "#ccc");
+	$('a').css("background", "#d4d4d4");
 	$('a').mouseenter(function() {
    		$(this).css("color","white");
 		$(this).css("background", colour);
 	});
 	$('a').mouseout(function() {
-		$(this).css("color", "black");
-		$(this).css("background", "#ccc");
+		$(this).css("color", "#111");
+		$(this).css("background", "#d4d4d4");
 	});
 	$('.explanation').css("border", "3px solid "+colour);
 	$('#colourinfo').html("You're viewing this page in <span style='color:"+colour+"; font-weight:600;'>"+colourName+"</span>.");
