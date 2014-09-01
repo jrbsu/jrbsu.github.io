@@ -16,7 +16,7 @@ $(document).ready(function namedColour() {
 		$(this).css("color", "#111");
 		$(this).css("background", "#d4d4d4");
 	});
-	$('.explanation').css("border-bottom", "3px solid "+colour);
+	$('ul').css("border-left", "3px solid "+colour);
 	$('#colourinfo').html("You're viewing this page in <span style='color:"+colour+"; font-weight:600;'>"+colourName+"</span>.");
 
 $("div.panels:eq(0)> ul").hide();
@@ -24,7 +24,9 @@ $('div.panels:eq(0)> h3').click(function() {
 	$(this).next('ul:hidden').slideDown('fast')
 	.siblings('ul:visible').slideUp('fast');
 	$('h3').css("color", "#111");
+	$('.star').html("&#9734;&nbsp;");
 	$(this).css("color", colour);
+	$(this).children('.star').html("&#9733;&nbsp;");
 //	$(this).next('span').html('&darr;');
 //	$('div.panels:hidden').siblings('span').html('&rarr;');
 });
