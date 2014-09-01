@@ -38,8 +38,8 @@ $(document).ready(function randomColour() {
 */
 
 $(document).ready(function namedColour() {
-	var colourArray = ["RGB(41, 164, 124)", "RGB(150, 27, 51)", "RGB(49, 78, 84)", "RGB(112, 84, 167)", "RGB(178, 30, 103)", "RGB(111, 120, 45)", "RGB(197, 133, 32)", "RGB(59, 30, 109)", "RGB(96, 120, 136)", "RGB(116, 121, 163)", "RGB(33, 145, 174)", "RGB(47, 68, 178)", "RGB(182, 71, 80)", "RGB(55, 164, 43)", "RGB(125, 96, 77)", "RGB(172, 64, 33)", "RGB(172, 32, 148)", "RGB(222, 20, 57)", "RGB(77, 20, 61)", "RGB(199, 112, 8)", "RGB(248, 231, 16)", "RGB(244, 194, 227)"];
-	var nameArray = ["jungle green", "vivid burgundy", "dark slate grey", "royal purple", "rich maroon", "olivetone", "geebung", "midnight blue", "hoki", "deluge", "pelorous", "violet blue", "rose vale", "forest green", "Roman coffee", "rock spray", "fandango", "crimson", "blackberry", "chocolate", "lemon", "rose pink"];
+	var colourArray = ["RGB(41, 164, 124)", "RGB(150, 27, 51)", "RGB(49, 78, 84)", "RGB(112, 84, 167)", "RGB(178, 30, 103)", "RGB(111, 120, 45)", "RGB(197, 133, 32)", "RGB(59, 30, 109)", "RGB(96, 120, 136)", "RGB(116, 121, 163)", "RGB(33, 145, 174)", "RGB(47, 68, 178)", "RGB(182, 71, 80)", "RGB(55, 164, 43)", "RGB(125, 96, 77)", "RGB(172, 64, 33)", "RGB(172, 32, 148)", "RGB(222, 20, 57)", "RGB(77, 20, 61)", "RGB(199, 112, 8)", "RGB(248, 231, 16)"];
+	var nameArray = ["jungle green", "vivid burgundy", "dark slate grey", "royal purple", "rich maroon", "olivetone", "geebung", "midnight blue", "hoki", "deluge", "pelorous", "violet blue", "rose vale", "forest green", "Roman coffee", "rock spray", "fandango", "crimson", "blackberry", "chocolate", "lemon"];
 	
 	var random = Math.floor(Math.random()*colourArray.length);
 	var colour = colourArray[random];
@@ -57,6 +57,16 @@ $(document).ready(function namedColour() {
 	});
 	$('.explanation').css("border", "3px solid "+colour);
 	$('#colourinfo').html("You're viewing this page in <span style='color:"+colour+"; font-weight:600;'>"+colourName+"</span>.");
+
+$("div.panels:eq(0)> ul").hide();
+$('div.panels:eq(0)> h3').click(function() {
+	$(this).next('ul:hidden').slideDown('fast')
+	.siblings('ul:visible').slideUp('fast');
+	$(this).next('.fake').css("color", colour);
+//	$('div.panels:visible').siblings('span').html('&darr;');
+//	$('div.panels:hidden').siblings('span').html('&rarr;');
+});
+
 });
 
 $(document).ready(function() {
