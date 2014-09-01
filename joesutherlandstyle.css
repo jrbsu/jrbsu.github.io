@@ -141,33 +141,13 @@ a:hover, a.hover {
 	margin: 2em 0 1em;
 }
 
-.pub {
-	margin: 1em 0;
-}
-
-.pub-first {
-	margin: 0 0 1em 0;
-}
-
-a.question {
-	vertical-align: super;
-	font-size: 80%;
-}
-
-.ref {
-	font-size: 90%;
-	vertical-align: baseline;
-	position: relative;
-	top: -0.2em;
-	cursor: pointer;
-}
-
 .explanation {
-	font-size: 50%;
-	max-width: 30em;
-	position: absolute;
-	padding: 5px;
-	background-color: #fff;
+	font-size: 70%;
+	max-width: 60em;
+	padding: 5px 5px 5px 20px;
+	margin: 5px 0;
+	font-family: 'Merriweather Sans', sans-serif;
+	display: block;
 	z-index: 9999;
 	overflow: auto;
 }
