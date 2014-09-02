@@ -31,7 +31,7 @@ function windowResize() {
 
 function slidersAndStars() {
 	windowResize();
-	if (screenWidth > 720) {
+	if (screenWidth > 1000) {
 		$("div.panels:eq(0)> ul").hide();
 		$('div.panels:eq(0)> h3').click(function() {
 			$(this).next('ul:hidden').slideDown('fast')
