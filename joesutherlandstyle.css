@@ -118,6 +118,8 @@ a:hover, a.hover {
     text-decoration: none;
     background: none;
     color: grey;
+    cursor: pointer;
+    cursor: hand;
 }
 
 .page-wrap {
