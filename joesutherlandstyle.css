@@ -67,7 +67,7 @@ table {
 
 body {
 	color: #111;
-	background: #DDDDDB url('bg.png') fixed no-repeat center right;
+	background: #DDDDDB;
     font-family: 'Merriweather', serif;
     font-weight: 300;
     line-height: 1.5;
@@ -170,6 +170,10 @@ li:before {
 
 .hidden {
 	display: none;
+}
+
+.issuuembed, iframe {
+	padding: 10px 0;
 }
 
 /* <Styles for mobile> */
