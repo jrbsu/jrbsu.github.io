@@ -87,7 +87,7 @@ $(document).ready(function () {
 // The following code is by Chris Coyier & tweaked by Mathias Bynens
 $(function() {
 	// Find all YouTube videos
-	var $allVideos = $("iframe[src^='https://www.youtube-nocookie.com']"),
+	var $allVideos = $("iframe[src='//www.youtube-nocookie.com']"),
 	    // The element that is fluid width
 	    $fluidEl = $(".panels");
 	// Figure out and save aspect ratio for each video
