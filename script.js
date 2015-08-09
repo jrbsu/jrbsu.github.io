@@ -39,6 +39,7 @@ function namedColour() {
 		$(this).css("background", "#d4d4d4");
 	});
 	$('ul').css("border-left", "3px solid "+colour);
+	$('.star').css("color", colour);
 	$('#colourinfo').html("You're viewing this page in <span style='color:"+colour+"; font-weight:600;'>"+colourName+"</span>.");
 };
 
