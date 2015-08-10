@@ -5,7 +5,7 @@ var random;
 function windowResize() {
 	screenWidth = window.innerWidth;
 	console.log(screenWidth);
-	if (screenWidth > 900) {
+	if (screenWidth > 1000) {
 		$('body').css("background", "#DDDDDB url(img/bg"+random+".png) fixed no-repeat center right");
 	} else {
 		$('body').css("background", "#DDDDDB");
@@ -57,11 +57,11 @@ function loadingBar() {
 function slidersAndStars() {
 	windowResize();
 	if (screenWidth > 1000) {
-		$("div.panels:eq(0)> ul").hide();
-		$('div.panels:eq(0)> h3').click(function() {
-			$(this).next('ul:hidden').slideDown('fast')
-			.siblings('ul:visible').slideUp('fast');
-			$('h3').css("color", "#111");
+		$("div.panels:eq(0)> ul.slide").hide();
+		$('div.panels:eq(0)> h3.panel').click(function() {
+			$(this).next('ul.slide:hidden').slideDown('fast')
+			.siblings('ul.slide:visible').slideUp('fast');
+			$('h3.panel').css("color", "#111");
 			$('.star').html("&#9734;&nbsp;");
 			$(this).css("color", colour);
 			$(this).children('.star').html("&#9733;&nbsp;");
@@ -83,6 +83,8 @@ $(document).ready(function () {
 	windowResize();
 	slidersAndStars();
 	namedColour();
+	$('#alwayson').css("color", colour);
+	$("a[href^='http://']").attr("target","_blank");
 });
 
 // The following code is by Chris Coyier & tweaked by Mathias Bynens

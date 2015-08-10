@@ -156,6 +156,15 @@ a:hover, a.hover {
 	overflow: auto;
 }
 
+.notes {
+	font-size: 50%;
+	padding: 0 0 0 5px;
+}
+
+.highlight {
+	font-weight: 400;
+}
+
 li {
 	list-style: none;
 }
@@ -181,23 +190,11 @@ li:before {
 @media screen and (max-width: 1000px) {
 
 .container {
-	width: 50%;
-}
-
-}
-
-@media screen and (max-width: 768px) {
-
-.container {
 	width: 100%;
 }
 
 .page-wrap {
 	margin: 0 2em;
-}
-
-h1 {
-	font-size: 3em;
 }
 
 .explanation {
