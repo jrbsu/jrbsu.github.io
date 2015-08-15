@@ -4,7 +4,6 @@ var random;
 
 function windowResize() {
 	screenWidth = window.innerWidth;
-	console.log(screenWidth);
 	if (screenWidth > 1000) {
 		$('body').css("background", "#DDDDDB url(img/bg"+random+".png) fixed no-repeat center right");
 	} else {
@@ -14,8 +13,8 @@ function windowResize() {
 
 function namedColour() {
 	loadingBar();
-	var colourArray = ["RGB(41, 164, 124)", "RGB(150, 27, 51)", "RGB(49, 78, 84)", "RGB(112, 84, 167)", "RGB(178, 30, 103)", "RGB(111, 120, 45)", "RGB(197, 133, 32)", "RGB(59, 30, 109)", "RGB(96, 120, 136)", "RGB(116, 121, 163)", "RGB(33, 145, 174)", "RGB(47, 68, 178)", "RGB(182, 71, 80)", "RGB(55, 164, 43)", "RGB(125, 96, 77)", "RGB(172, 64, 33)", "RGB(172, 32, 148)", "RGB(222, 20, 57)", "RGB(77, 20, 61)", "RGB(199, 112, 8)", "RGB(255, 206, 0)", ];
-	var nameArray = ["jungle green", "vivid burgundy", "dark slate grey", "royal purple", "rich maroon", "olivetone", "geebung orange", "midnight blue", "hoki", "deluge", "pelorous", "violet blue", "rose vale", "forest green", "Roman coffee", "rock spray", "fandango", "crimson", "blackberry", "chocolate", "lemon"];
+	var colourArray = ["RGB(83, 153, 114)", "RGB(150, 27, 51)", "RGB(49, 78, 84)", "RGB(112, 84, 167)", "RGB(178, 30, 103)", "RGB(101, 124, 21)", "RGB(197, 133, 32)", "RGB(57, 40, 110)", "RGB(62, 82, 88)", "RGB(116, 121, 163)", "RGB(33, 145, 174)", "RGB(47, 68, 178)", "RGB(182, 71, 80)", "RGB(55, 164, 43)", "RGB(125, 96, 77)", "RGB(127, 59, 47)", "RGB(172, 32, 148)", "RGB(222, 20, 57)", "RGB(77, 20, 61)", "RGB(199, 112, 8)", "RGB(214, 206, 0)", ];
+	var nameArray = ["ocean green", "vivid burgundy", "dark slate grey", "royal purple", "rich maroon", "fern frond", "geebung orange", "midnight purple", "casal blue", "deluge", "pelorous", "violet blue", "rose vale", "forest green", "Roman coffee", "nutmeg", "fandango", "crimson", "blackberry", "mocha", "citrous"];
 	
 	random = Math.floor(Math.random()*colourArray.length);
 	console.log(random);
@@ -41,6 +40,7 @@ function namedColour() {
 	$('ul').css("border-left", "3px solid "+colour);
 	$('.star').css("color", colour);
 	$('#colourinfo').html("You're viewing this page in <span style='color:"+colour+"; font-weight:600;'>"+colourName+"</span>.");
+	$('#slug').html("is a journalist and communicator, seen here in <span style='color:"+colour+"; font-weight:600;'>"+colourName+"</span>.");
 };
 
 function loadingBar() {
