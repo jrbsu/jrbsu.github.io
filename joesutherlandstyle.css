@@ -36,7 +36,7 @@ body {
 body {
 	color: #111;
 	background: #7B3AB9;
-    font-family: 'Abel', sans-serif;
+    font-family: 'Karla', sans-serif;
     font-weight: 400;
     line-height: 1.5;
 }
@@ -54,16 +54,21 @@ h1 {
 	font-size: 4em;
     padding: 0 0.5em;
     transition: all .15s;
-    font-weight: 400;
+    font-weight: 700;
     text-align: center;
     margin: 1em 0;
+    border: 20px solid #333;
+    text-transform: uppercase;
 }
 
 h2, h3 {
+    display: inline-block;
 	font-size: 2em;
+    padding: 0 0.5em;
 	font-family: 'Space Mono', monospace;
     font-weight: 700;
     margin: 3em 0 0.5em;
+    text-transform: uppercase;
 }
 
 p {
@@ -78,15 +83,15 @@ a {
     transition: all .15s;
     color: #111;
     padding: 0 1px;
-    border-bottom: 2px solid #26E6B1;
+    border-bottom: 2px solid #111;
 }
 
 ::-moz-selection {
-	background: #BBB;
+	background: #cbcbcb;
 }
 
 ::selection {
-	background: #BBB;
+	background: #cbcbcb;
 }
 
 /*

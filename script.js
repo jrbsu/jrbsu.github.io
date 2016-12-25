@@ -62,16 +62,19 @@ function namedColor() {
     titleColor = rgbToHsl(R,G,B).sat >= 0.5 ? "#111" : "#fff";
     
     $('body').css("background", "linear-gradient(" + lighterColor + "," + lighterColor2 + ")");
-	$('a').css("border-bottom", "2px solid " + linkColor);
+	$('a').css("border-bottom", "3px solid " + linkColor);
 	$('a')
         .mouseover(function () {
-            $(this).css("border-bottom", "none").css("border-bottom", "2px solid " + borderColor).css("color", darkerColor);
+            $(this).css("border-bottom", "none").css("border-bottom", "3px solid " + borderColor).css("color", darkerColor);
         })
         .mouseout(function () {
-            $(this).css("border-bottom", "2px solid " + linkColor).css("background", "none").css("color", textColor);
+            $(this).css("border-bottom", "3px solid " + linkColor).css("background", "none").css("color", textColor);
         });
-//    $('h1').css("background", borderColor).css("color", titleColor);
+    
+    $('::selection').css("background", darkerColor);
+    
     $('h1').css("color", darkerColor).css("border-bottom", "20px solid " + darkerColor).css("border-left", "20px solid " + linkColor).css("border-top", "20px solid " + lighterColor2).css("border-right", "20px solid " + borderColor);
+    $('h2').css("color", darkerColor).css("border-bottom", "20px solid " + darkerColor).css("border-left", "20px solid " + linkColor).css("border-top", "20px solid " + lighterColor2).css("border-right", "20px solid " + borderColor);
     $('.h1-wrapper').css("color", borderColor);
     $('.star')
         .css("color", linkColor)
