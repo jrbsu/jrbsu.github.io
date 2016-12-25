@@ -102,8 +102,13 @@ a:hover, a.hover {
 */
 
 .page-wrap {
-	margin: 0 3em;
+	margin: 0 auto;
     text-align: center;
+}
+
+.content-wrap {
+    width: 80%;
+    margin: 0 auto;
 }
 
 .container {
@@ -151,15 +156,10 @@ a:hover, a.hover {
         font-size: 1.5em;
     }
     
+    .content-wrap {
+        width: 100%;
+    }
+    
 }
 
 /* </Styles for mobile> */
-
-/*
-@media screen and (min-width: 500px) { 
-
-body {
-	padding: 0 0 0 2em;
-}
-
-} */
