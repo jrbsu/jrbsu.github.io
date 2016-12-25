@@ -24,41 +24,14 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
 body {
 	line-height: 1;
 }
-ol, ul {
-	padding-left: 10px;
-	margin-bottom: 20px;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
 
 /* Tablet Landscape */
 @media screen and (max-width: 1060px) {
     #primary { width:67%; }
     #secondary { width:30%; margin-left:3%;}  
-}
-
-/* Tabled Portrait */
-@media screen and (max-width: 768px) {
-    #primary { width:100%; }
-    #secondary { width:100%; margin:0; border:none; }
 }
 
 {
@@ -115,11 +88,11 @@ a {
 }
 
 ::-moz-selection {
-	background: #fff;
+	background: #BBB;
 }
 
 ::selection {
-	background: #fff;
+	background: #BBB;
 }
 
 /*
@@ -148,53 +121,8 @@ a:hover, a.hover {
 	margin: 0;
 }
 
-.topbox p {
-	font-weight: 700;
-	margin: -0.5em 0 0 1.3em;
-}
-
-.explanation {
-	font-size: 90%;
-	max-width: 60em;
-	padding: 5px 5px 5px 0px;
-	margin: 5px 0;
-	font-family: 'Merriweather', serif;
-	display: block;
-	z-index: 9999;
-	overflow: auto;
-}
-
-.notes {
-	font-size: 50%;
-	padding: 0 0 0 5px;
-}
-
-.highlight {
-	font-weight: 400;
-}
-
-li {
-	list-style: none;
-}
-
-li:before {
-	content: '» ';
-}
-
 .end {
 	padding-bottom: 7em;
-}
-
-.hidden {
-	display: none;
-}
-
-.swatch {
-    width: 2em;
-    background: #000;
-    height: 2em;
-    border: 0.5px solid black;
-    padding: 0.5em;
 }
 
 /* <Styles for mobile> */
@@ -249,21 +177,3 @@ body {
 }
 
 } */
-
-.scheme {
-    width: 100%;
-}
-
-.star {
-    display: none;
-    transition: .15s all;
-    font-size: 0.6em;
-    position: relative;
-    bottom: 0.2em;
-}
-
-.h1-wrapper {
-    font-weight: 700;
-}
-
-
