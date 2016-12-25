@@ -48,6 +48,7 @@ table {
 	border-spacing: 0;
 }
 
+
 /* Tablet Landscape */
 @media screen and (max-width: 1060px) {
     #primary { width:67%; }
@@ -67,94 +68,88 @@ table {
 
 body {
 	color: #111;
-	background: #DDDDDB;
-    font-family: 'Open Sans', sans-serif;
+	background: #7B3AB9;
+    font-family: 'Abel', sans-serif;
     font-weight: 400;
     line-height: 1.5;
-    width: 100%;
 }
 
 @media screen and (max-width: 768px) { /* Get rid of the photo for mobile for legibility */
     body {
-	background: #DDDDDB;
-}
+	   background: #7B3AB9;
+    }
+    
 }
 
 h1 {
+	font-family: 'Space Mono', monospace;
 	font-size: 4em;
-	font-family: 'Merriweather', serif;
-	line-height: 1; /* Makes it look ... less weird on mobile */
-    font-weight: 800;
-    margin: 1em 0 0 0;
-    letter-spacing: -3px;
-}
-
-h2 {
-	font-size: 2em;
-	font-family: 'Merriweather', serif;
-    font-weight: 600;
-    margin-top: 1em;
-}
-
-h3 {
-	font-size: 1.5em;
-	font-family: 'Merriweather', serif;
+    padding: 0;
+    transition: all .15s;
     font-weight: 400;
-    margin-top: 0.2em;
+    text-align: center;
+    margin: 1em 0;
+}
+
+h2, h3 {
+	font-size: 2em;
+	font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    margin: 3em 0 0.5em;
 }
 
 p {
 	margin-bottom: 0.6em;
+    line-height: 1.6em;
+    font-size: 2em;
 }
 
 a {
-    font-weight: 400;
+    font-weight: 600;
     text-decoration: none;
-    color: black;
-    padding: 1px 2px;
-}
-
-p a {
-	font-weight: 600;
+    transition: all .15s;
+    color: #111;
+    padding: 0 1px;
+    border-bottom: 2px solid #26E6B1;
 }
 
 ::-moz-selection {
-	background: #AAAAA7;
+	background: #fff;
 }
 
 ::selection {
-	background: #AAAAA7;
+	background: #fff;
 }
 
+/*
 a:hover, a.hover {
     text-decoration: none;
     background: none;
     color: grey;
     cursor: pointer;
     cursor: hand;
+    background: #ffff00;
+    border-bottom: none!important; 
 }
+*/
 
 .page-wrap {
 	margin: 0 3em;
+    text-align: center;
 }
 
 .container {
-	max-width: 1096px;
-	width: 60%;
+	width: 100%;
+    margin: 2em 0 1em;
 }
 
 .topbox {
-	width: 80%;
 	margin: 0;
 }
 
 .topbox p {
 	font-weight: 700;
 	margin: -0.5em 0 0 1.3em;
-}
-
-.about {
-	margin: 2em 0 1em;
 }
 
 .explanation {
@@ -185,46 +180,62 @@ li:before {
 	content: '» ';
 }
 
-.contact {
-	padding-bottom: 3em;
+.end {
+	padding-bottom: 7em;
 }
 
 .hidden {
 	display: none;
 }
 
-.issuuembed, iframe {
-	padding: 10px 0;
+.swatch {
+    width: 2em;
+    background: #000;
+    height: 2em;
+    border: 0.5px solid black;
+    padding: 0.5em;
 }
 
 /* <Styles for mobile> */
 
 @media screen and (max-width: 1000px) {
 
-.container {
-	width: 100%;
+    .container {
+        width: 100%;
+    }
+
+    .page-wrap {
+        margin: 0 2em;
+    }
+
+    .explanation {
+        max-width: 100%;
+        position: relative;
+        left: 0;
+        margin-top: 0;
+        margin: 1em 0;
+    }
+
 }
 
-.page-wrap {
-	margin: 0 2em;
-}
+@media screen and (max-width: 600px) {
 
-.explanation {
-	max-width: 100%;
-	position: relative;
-	left: 0;
-	margin-top: 0;
-	margin: 1em 0;
-}
+    h1 {
+	   font-size: 3em;
+    }
 
-}
+    .hide-mobile {
+        display: none;
+    }
 
-@media screen and (max-width: 500px) {
-
-h1 {
-	font-size: 2.5em;
-}
-
+    p {
+        font-size: 1.5em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
 }
 
 /* </Styles for mobile> */
@@ -237,3 +248,21 @@ body {
 }
 
 } */
+
+.scheme {
+    width: 100%;
+}
+
+.star {
+    display: none;
+    transition: .15s all;
+    font-size: 0.6em;
+    position: relative;
+    bottom: 0.2em;
+}
+
+.h1-wrapper {
+    font-weight: 700;
+}
+
+
