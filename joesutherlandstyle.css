@@ -24,9 +24,6 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-body {
-	line-height: 1;
-}
 
 {
 	margin: 0;
@@ -34,18 +31,12 @@ body {
 }
 
 body {
+	line-height: 1;
 	color: #111;
 	background: #7B3AB9;
     font-family: 'Karla', sans-serif;
     font-weight: 400;
     line-height: 1.5;
-}
-
-@media screen and (max-width: 768px) { /* Get rid of the photo for mobile for legibility */
-    body {
-	   background: #7B3AB9;
-    }
-    
 }
 
 h1 {
@@ -67,7 +58,7 @@ h2, h3 {
     padding: 0 0.5em;
 	font-family: 'Space Mono', monospace;
     font-weight: 700;
-    margin: 3em 0 0.5em;
+    margin: 3em 0 1em;
     text-transform: uppercase;
 }
 
@@ -94,18 +85,6 @@ a {
 	background: #cbcbcb;
 }
 
-/*
-a:hover, a.hover {
-    text-decoration: none;
-    background: none;
-    color: grey;
-    cursor: pointer;
-    cursor: hand;
-    background: #ffff00;
-    border-bottom: none!important; 
-}
-*/
-
 .page-wrap {
 	margin: 0 auto;
     text-align: center;
@@ -127,6 +106,10 @@ a:hover, a.hover {
 
 .end {
 	padding-bottom: 7em;
+}
+
+.show-mobile {
+    display: none;
 }
 
 /* <Styles for mobile> */
@@ -151,6 +134,10 @@ a:hover, a.hover {
 
     .hide-mobile {
         display: none;
+    }
+    
+    .show-mobile {
+        display: inline;
     }
 
     p {
