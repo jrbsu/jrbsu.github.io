@@ -47,7 +47,7 @@ h1 {
     font-weight: 700;
     text-align: center;
     margin: 1em 0;
-    border: 20px solid #333;
+    border: 20px solid transparent;
     text-transform: uppercase;
 }
 
@@ -77,7 +77,7 @@ a {
     transition: all .15s;
     color: #111;
     padding: 0 1px;
-    border-bottom: 2px solid #111;
+    border-bottom: 2px solid transparent;
 }
 
 ::-moz-selection, ::selection {
