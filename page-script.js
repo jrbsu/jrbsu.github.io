@@ -1,4 +1,4 @@
-var color, randomHue, baseColor, linkColor, titleColor, bgColor, textColor, darkerColor, lightestColor, lighterColor, colorName;
+var color, randomHue, baseColor, linkColor, titleColor, bgColor, textColor, darkerColor, lightestColor, lighterColor, colorName, darkestColor;
 
 function namedColor() {
     "use strict";
@@ -6,6 +6,7 @@ function namedColor() {
     textColor = "#111";
     bgColor = "#ededed";
     
+    darkestColor = "hsla(" + randomHue + ", 100%, 20%, 1)";
     darkerColor = "hsla(" + randomHue + ", 100%, 40%, 1)";
     baseColor = "hsla(" + randomHue + ", 100%, 50%, 1)";
 	linkColor = "hsla(" + randomHue + ", 100%, 70%, 1)";
@@ -66,33 +67,12 @@ function namedColor() {
             $(this).css("border-bottom", "3px solid " + linkColor).css("background", "none").css("color", textColor);
         });
     
-    $('h1')
-        .css("color", darkerColor)
+    $('h1, h2')
+        .css("color", darkestColor)
         .css("border-bottom", "20px solid " + darkerColor)
         .css("border-left", "20px solid " + linkColor)
         .css("border-top", "20px solid " + lighterColor)
         .css("border-right", "20px solid " + baseColor);
-    $('h2')
-        .css("color", darkerColor)
-        .css("border-bottom", "20px solid " + darkerColor)
-        .css("border-left", "20px solid " + linkColor)
-        .css("border-top", "20px solid " + lighterColor)
-        .css("border-right", "20px solid " + baseColor);
-    $('.h1-wrapper').css("color", baseColor);
-    $('.star')
-        .css("color", linkColor)
-        .mouseover(function () {
-            $(this).css("color", textColor);
-        })
-        .mouseout(function () {
-            $(this).css("color", linkColor);
-        });
-    $('.swatch1')
-        .css("background", bgColor);
-    $('.swatch2')
-        .css("background", borderColor);
-    $('.swatch3')
-        .css("background", linkColor);
 }
 
 $(document).ready(function () {

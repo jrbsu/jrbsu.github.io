@@ -24,11 +24,6 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-strong {
-    font-weight: 700;
-}
-/* HTML5 display-role reset for older browsers */
-
 {
 	margin: 0;
 	padding: 0;
@@ -72,8 +67,12 @@ p {
     font-size: 2em;
 }
 
+strong {
+    font-weight: 700;
+}
+
 a {
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: none;
     transition: all .15s;
     color: #111;
@@ -81,11 +80,7 @@ a {
     border-bottom: 2px solid #111;
 }
 
-::-moz-selection {
-	background: #cbcbcb;
-}
-
-::selection {
+::-moz-selection, ::selection {
 	background: #cbcbcb;
 }
 
@@ -106,6 +101,10 @@ a {
 
 .topbox {
 	margin: 0;
+}
+
+.color-blurb {
+    font-size: 1em;
 }
 
 .end {
@@ -159,6 +158,3 @@ a {
 }
 
 /* </Styles for mobile> */
-.color-blurb {
-    font-size: 1em;
-}
