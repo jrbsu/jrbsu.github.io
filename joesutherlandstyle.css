@@ -23,6 +23,10 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
+strong {
+    font-weight: 700;
+}
 /* HTML5 display-role reset for older browsers */
 
 {
@@ -155,3 +159,6 @@ a {
 }
 
 /* </Styles for mobile> */
+.color-blurb {
+    font-size: 1em;
+}
