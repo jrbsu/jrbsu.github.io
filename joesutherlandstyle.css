@@ -80,6 +80,14 @@ a {
     border-bottom: 2px solid transparent;
 }
 
+.color-blurb a:hover {
+    cursor: pointer;
+}
+
+.color-blurb a:active {
+    color: black!important;
+}
+
 ::-moz-selection, ::selection {
 	background: #cbcbcb;
 }
