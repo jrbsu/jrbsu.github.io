@@ -13,46 +13,46 @@ function namedColor() {
     lighterColor = "hsla(" + randomHue + ", 100%, 80%, 1)";
     lightestColor = "hsla(" + randomHue + ", 100%, 90%, 1)";
     
-    switch(true) {
-        case randomHue>0 && randomHue<=20:
-            colorName = "red";
-            break;
-        case randomHue>20 && randomHue<=50:
-            colorName = "orange";
-            break;
-        case randomHue>50 && randomHue<=80:
-            colorName = "yellow";
-            break;
-        case randomHue>80 && randomHue<=110:
-            colorName = "lime green";
-            break;
-        case randomHue>110 && randomHue<=140:
-            colorName = "green";
-            break;
-        case randomHue>140 && randomHue<=170:
-            colorName = "teal";
-            break;
-        case randomHue>170 && randomHue<=200:
-            colorName = "cyan";
-            break;
-        case randomHue>200 && randomHue<=230:
-            colorName = "aqua blue";
-            break;
-        case randomHue>230 && randomHue<=260:
-            colorName = "blue";
-            break;
-        case randomHue>260 && randomHue<=290:
-            colorName = "purple";
-            break;
-        case randomHue>290 && randomHue<=320:
-            colorName = "magenta";
-            break;
-        case randomHue>320 && randomHue<=350:
-            colorName = "pink";
-            break;
-        case randomHue>350 && randomHue<=360:
-            colorName = "red";
-            break;
+    switch (true) {
+    case randomHue > 0 && randomHue <= 20:
+        colorName = "red";
+        break;
+    case randomHue > 20 && randomHue <= 50:
+        colorName = "orange";
+        break;
+    case randomHue > 50 && randomHue <= 80:
+        colorName = "yellow";
+        break;
+    case randomHue > 80 && randomHue <= 110:
+        colorName = "lime green";
+        break;
+    case randomHue > 110 && randomHue <= 140:
+        colorName = "green";
+        break;
+    case randomHue > 140 && randomHue <= 170:
+        colorName = "teal";
+        break;
+    case randomHue > 170 && randomHue <= 200:
+        colorName = "cyan";
+        break;
+    case randomHue > 200 && randomHue <= 230:
+        colorName = "aqua blue";
+        break;
+    case randomHue > 230 && randomHue <= 260:
+        colorName = "blue";
+        break;
+    case randomHue > 260 && randomHue <= 290:
+        colorName = "purple";
+        break;
+    case randomHue > 290 && randomHue <= 320:
+        colorName = "magenta";
+        break;
+    case randomHue > 320 && randomHue <= 350:
+        colorName = "pink";
+        break;
+    case randomHue > 350 && randomHue <= 360:
+        colorName = "red";
+        break;
     }
     
     $('.color-name').text(colorName);
@@ -68,6 +68,7 @@ function namedColor() {
         });
     
     $('h1, h2')
+        .css("box-shadow", "0px 0px 50px " + darkerColor)
         .css("color", darkestColor)
         .css("border-bottom", "20px solid " + darkerColor)
         .css("border-left", "20px solid " + linkColor)
