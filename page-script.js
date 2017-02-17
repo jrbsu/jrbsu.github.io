@@ -68,7 +68,6 @@ function namedColor() {
         });
     
     $('h1, h2')
-        .css("box-shadow", "0px 0px 50px " + darkerColor)
         .css("color", darkestColor)
         .css("border-bottom", "20px solid " + darkerColor)
         .css("border-left", "20px solid " + linkColor)
