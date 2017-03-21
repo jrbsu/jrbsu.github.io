@@ -67,6 +67,14 @@ function namedColor() {
             $(this).css("border-bottom", "3px solid " + linkColor).css("background", "none").css("color", textColor);
         });
     
+	$('.new-color')
+        .mouseover(function () {
+            $(this).css("color", "#000");
+        })
+        .mouseout(function () {
+            $(this).css("color", textColor);
+        });
+    
     $('h1, h2')
         .css("color", darkestColor)
         .css("border-bottom", "20px solid " + darkerColor)

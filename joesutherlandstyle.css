@@ -32,10 +32,11 @@ time, mark, audio, video {
 body {
 	line-height: 1;
 	color: #111;
-	background: #7B3AB9;
+	background: #fff;
     font-family: 'Karla', sans-serif;
     font-weight: 400;
     line-height: 1.5;
+    background: linear-gradient(rgb(255, 255, 255), rgb(200, 200, 200));
 }
 
 h1 {
