@@ -50,6 +50,7 @@ h1 {
     margin: 1em 0;
     border: 20px solid transparent;
     text-transform: uppercase;
+    transform-style: preserve-3d;
 }
 
 h2, h3 {
@@ -66,6 +67,18 @@ p {
 	margin-bottom: 0.6em;
     line-height: 1.6em;
     font-size: 2em;
+}
+
+h1 p {
+    font-size: 1em;
+	margin-bottom: 0;
+    transform: translateZ(20px);
+}
+
+h2 p {
+	margin-bottom: 0;
+    transform: translateZ(20px);
+    font-size: 1em;
 }
 
 strong {
