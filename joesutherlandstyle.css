@@ -36,7 +36,6 @@ body {
     font-weight: 300;
     line-height: 1.5;
     /* background: rgb(33, 33, 33); */
-		background: url('img/cyan.jpg');
 		background-size: contain;
 		mix-blend-mode: hard-light;
 }
@@ -102,18 +101,6 @@ a {
     border-bottom: 2px solid transparent;
 }
 
-.color-blurb a:hover {
-    cursor: pointer;
-}
-
-.color-blurb a:active {
-    color: black!important;
-}
-
-::-moz-selection, ::selection {
-	background: #cbcbcb;
-}
-
 .page-wrap {
 	margin: 0 auto;
     text-align: center;
@@ -126,7 +113,7 @@ a {
 
 .container {
 	width: 100%;
-    margin: 2em 0 1em;
+	margin: 2em 0 1em;
 }
 
 .topbox {
@@ -160,6 +147,10 @@ a {
 		-o-animation: flickerAnimation 5s infinite;
 		animation: flickerAnimation 5s infinite;
 		*/
+}
+
+.hidden {
+	display: none;
 }
 
 @keyframes flickerAnimation {

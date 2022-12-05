@@ -10,7 +10,13 @@ $(document).on("mousemove", function(event) {
 
   $(spotlight).css("left", x + "px");
   $(spotlight).css("top", y + "px");
-  $('body').append(spotlight);
+
+  if (window.innerWidth>1000) {
+    $('.spotlight').removeClass('hidden');
+    $('body').append(spotlight);
+  } else {
+    $('.spotlight').addClass('hidden');
+  }
 });
 
 $(document).ready(function () {
@@ -43,7 +49,7 @@ $(document).ready(function () {
       photoCredit += "Anthony Melone"
       break;
   case randomHue > 80 && randomHue <= 110:
-      colorName = "lime green";
+      colorName = "lime";
       photoCredit += "Victor Figueroa"
       break;
   case randomHue > 110 && randomHue <= 140:
@@ -83,15 +89,16 @@ $(document).ready(function () {
       photoCredit += "Smit Patel"
       break;
   }
-
-  $('body')
-    .css("background", headingColorRight + " url(img/" + colorName + ".jpg)")
-    .css("background-size", "cover")
-    .css("background-repeat", "no-repeat");
-  photoCredit += ", licensed under <a href='https://unsplash.com/license'>the Unsplash license</a>."
-  $('.credit').html(photoCredit);
-
-  $('body::selection').css("background-color", "yellow");
+  if (window.innerWidth > 1000) {
+    $('body')
+      .css("background", headingColorRight + " url(img/" + colorName + ".jpg)")
+      .css("background-size", "cover")
+      .css("background-repeat", "no-repeat");
+    photoCredit += ", licensed under <a href='https://unsplash.com/license'>the Unsplash license</a>."
+    $('.credit').html(photoCredit);
+  } else {
+    $('body').css("background-color", headingColorTop);
+  }
 
   $('.heading').css("color", headingColor);
 
