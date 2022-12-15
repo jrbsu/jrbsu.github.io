@@ -90,15 +90,17 @@ $(document).ready(function () {
       break;
   }
   if (window.innerWidth > 1000) {
+    /*
     $('body')
       .css("background", headingColorRight + " url(img/" + colorName + ".jpg)")
       .css("background-size", "cover")
       .css("background-repeat", "no-repeat");
     photoCredit += ", licensed under <a href='https://unsplash.com/license'>the Unsplash license</a>."
-    $('.credit').html(photoCredit);
+    // $('.credit').html(photoCredit); // Not necessary while not using BGs.
+    $('.credit').html("");
   } else {
     $('body').css("background-color", headingColorTop);
-  }
+  } */
 
   $('.heading').css("color", headingColor);
 
