@@ -22,7 +22,7 @@ body {
     display: grid;
     height: 100vh;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
     place-items: center;
 }
 
@@ -31,9 +31,8 @@ h1 {
     color: white;
     font-family: "space mono";
     text-transform: uppercase;
-    font-size: clamp(4em, 2vw, 4em);
+    font-size: clamp(3em, 2vw, 3em);
     text-align: center;
-    font-weight: 700;
     margin: 0;
     padding: 20px;
     background: linear-gradient(
