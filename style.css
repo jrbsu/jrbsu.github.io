@@ -85,3 +85,24 @@ a:hover {
 .icons {
     font-size: 2em;
 }
+
+@media screen and (max-width: 600px) {
+
+    a {
+        animation: background-pan 3s linear infinite;
+        background: linear-gradient(
+            to right,
+            var(--red),
+            var(--orange),
+            var(--yellow),
+            var(--green),
+            var(--blue),
+            var(--indigo),
+            var(--violet),
+            var(--red)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200%;
+    }
+}
