@@ -1,0 +1,88 @@
+:root {
+    --red: rgb(170, 30, 0);
+    --orange: rgb(200, 130, 0);
+    --yellow: rgb(200, 200, 0);
+    --green: rgb(31, 200, 31);
+    --blue: rgb(41, 41, 230);
+    --indigo: rgb(100, 31, 200);
+    --violet: rgb(200, 31, 230);
+}
+
+@keyframes background-pan {
+    from {
+        background-position: 0% center;
+    }
+    to {
+        background-position: -200% center;
+    }
+}
+
+body {
+    background-color: rgb(10,10,10);
+    display: grid;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    place-items: center;
+}
+
+h1 {
+    animation: background-pan 3s linear infinite;
+    color: white;
+    font-family: "space mono";
+    text-transform: uppercase;
+    font-size: clamp(4em, 2vw, 4em);
+    text-align: center;
+    font-weight: 700;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(
+        to right,
+        var(--red),
+        var(--orange),
+        var(--yellow),
+        var(--green),
+        var(--blue),
+        var(--indigo),
+        var(--violet),
+        var(--red)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%;
+}
+
+p {
+    color: rgb(200,200,200);
+    text-transform: lowercase;
+    font-family: "work sans", sans-serif;
+    margin: 0 2em;
+    text-align: center;
+}
+
+a {
+    color: rgb(200,200,200);
+}
+
+a:hover {
+    animation: background-pan 3s linear infinite;
+    background: linear-gradient(
+        to right,
+        var(--red),
+        var(--orange),
+        var(--yellow),
+        var(--green),
+        var(--blue),
+        var(--indigo),
+        var(--violet),
+        var(--red)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%;
+    text-decoration: none;
+}
+
+.icons {
+    font-size: 2em;
+}
