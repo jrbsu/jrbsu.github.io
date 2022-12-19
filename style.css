@@ -85,3 +85,8 @@ a:hover {
 .icons {
     font-size: 2em;
 }
+
+.smallcaps {
+    text-transform: uppercase!important;
+    font-size: 0.5em;
+}
